@@ -20,7 +20,6 @@ from django.views.generic import TemplateView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
-    #url(r'test/', include('social_login.urls')),
     url(r'^accounts/', include('social_login.urls')),
     url(r'^accounts/', include('allauth.urls')),
 ]
