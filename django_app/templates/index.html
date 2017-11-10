@@ -13,6 +13,14 @@
 {% else %}
 <p>{{ user.first_name }}</p>
 <p><a href="{% url 'accounts:logout' %}">로그아웃</a></p>
+
+<div>
+    {% for account in user.socialaccount_set.all %}
+    {{ account }}
+    {{ account.extra_data.first_name }}
+    {{ account.extra_data.last_name }}
+    {% endfor %}
+</div>
 {% endif %}
 </body>
 </html>
