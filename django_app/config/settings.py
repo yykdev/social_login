@@ -90,6 +90,7 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
+# 소셜 로그인/로그아웃 후 Ridiect url 사용 여부 및 지정
 ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS = True
 LOGIN_REDIRECT_URL = "/"
 ACCOUNT_AUTHENTICATED_LOGOUT_REDIRECTS = True
