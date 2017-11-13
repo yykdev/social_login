@@ -21,5 +21,11 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
     url(r'^accounts/', include('social_login.urls')),
+
+    # 소셜 로그인 시도 도중 로그인 취소 버튼 클릭시 allauth overrride
+    # 꼭 url(r'^accounts/', include('allauth.urls')), 보다 먼저 호출 되어야 한다.
+    # url(r'^accounts/social/login/cancelled/$', member_views.social_login_cancelled),
+
+    # django all auth 라이브러리 셋팅
     url(r'^accounts/', include('allauth.urls')),
 ]
