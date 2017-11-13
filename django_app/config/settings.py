@@ -96,16 +96,14 @@ LOGIN_REDIRECT_URL = "/"
 ACCOUNT_AUTHENTICATED_LOGOUT_REDIRECTS = True
 ACCOUNT_LOGOUT_REDIRECT_URL = "/"
 
-
-
-
 # 디폴트 사이트의 id
 # 등록하지 않으면, 각 요청시에 host명의 Site 인스턴스를 찾음
 SITE_ID = 1
-
 SOCIALACCOUNT_ADAPTER = 'social_login.adapter.SocialAccountAdapter'
 # 소셜 인증시 메일 확인을 할 것인지 아닌지에 대한 설정
 SOCIALACCOUNT_EMAIL_VERIFICATION = 'none'
+
+
 
 WSGI_APPLICATION = 'config.wsgi.application'
 

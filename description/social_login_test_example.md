@@ -14,7 +14,7 @@ https://scontent.cdninstagram.com/t51.2885-19/s150x150/19050253_128946777683349_
 ```
 
 
-> print()account_provider.upper())
+> print(account_provider.upper())
 
 ```
 INSTAGRAM
