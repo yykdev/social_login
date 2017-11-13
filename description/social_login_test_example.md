@@ -14,7 +14,7 @@ https://scontent.cdninstagram.com/t51.2885-19/s150x150/19050253_128946777683349_
 ```
 
 
-> print(account_provider.upper())
+> print(sociallogin.account.provider.upper())
 
 ```
 INSTAGRAM
@@ -52,7 +52,7 @@ INSTAGRAM
 
 ## 페이스북
 
-> print()account_provider.upper())
+> print(sociallogin.account.provider.upper())
 
 ```
 FACEBOOK
@@ -87,7 +87,7 @@ FACEBOOK
 
 ## 카카오
 
-> print()account_provider.upper())
+> print(sociallogin.account.provider.upper())
 
 ```
 KAKAO
@@ -118,7 +118,7 @@ KAKAO
 
 ## 네이버
 
-> print()account_provider.upper())
+> print(sociallogin.account.provider.upper())
 
 ```
 NAVER
